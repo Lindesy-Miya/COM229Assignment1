@@ -1,0 +1,60 @@
+<%- include('./partials/header.ejs') -%>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div>
+      <h1 class="display-4">Contact Me</h1>
+      <hr class="my-4">
+      
+      <!--Put some form here-->
+
+   </div>
+  </div>
+ </div>
+
+ <div class="row justify-content-md-center">
+  <div class="col-8">
+    <form>
+      <div class="form-group">
+        <label for="fristName">First Name</label>
+        <input type="text" class="form-control" id="fristName" aria-describedby="emailHelp">
+        
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" aria-describedby="emailHelp" required>
+      </div>
+
+      <div class="form-group">
+        <label for="contactNumber">Contact Number</label>
+        <input type="text" class="form-control" id="contactNumber" required >
+      </div>
+
+      <div class="form-group">
+        <label for="emailAddress">Email Address</label>
+        <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" name="emailAddress" 
+        required placeholder="example@gmail.com">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="4" name="message"
+         placeholder="Enter your message here! Or try to find me in social media!"></textarea>
+      </div>
+    
+      <small id="emailHelp" class="form-text text-muted">I will never share your infomations with anyone else.</small>
+      <button type="submit" class="btn btn-primary" id="sendButton"><i class="far fa-envelope"></i> Send Message</button>
+
+    </form>
+  </div>
+</div>
+</div>
+  
+</div>
+
+<br>
+<br>
+<%- include('./partials/footer.ejs') -%>
+  

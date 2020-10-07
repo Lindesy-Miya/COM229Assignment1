@@ -1,0 +1,59 @@
+<style type="text/css">
+  #div1{
+  font-size: large;
+  padding:50px;
+  margin-right:10px;
+  float:left;
+  }
+
+  #div2{
+  padding:50px;
+  float:left;
+  }
+  </style>
+
+<%- include('./partials/header.ejs') -%>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="jumbotron">
+        <h1 class="display-4"><%= title %></h1>
+          <p class="lead">服務</p>
+
+
+      </div>
+      <hr class="my-4">
+      <div id="div1">
+        <h3>The service I offer: </h3>
+            <ul>
+              <li i class="fas fa-laptop-code"> general programming</li>
+              <p></p>
+              <li class="fas fa-blog"> web development</li>
+              <p></p>
+              <li class="fab fa-product-hunt"> product management</li>
+              <p></p>
+              <li class="fas fa-business-time"> business management</li>
+              <p></p>
+            </ul>
+        </div>
+      <div id="div2"> 
+        <h3>提供服務: </h3>
+          <ul>
+            <li i class="fas fa-laptop-code"> 通用程式語言</li>
+            <p></p>
+            <li class="fas fa-blog"> 網頁開發</li>
+            <p></p>
+            <li class="fab fa-product-hunt"> 產品管理</li>
+            <p></p>
+            <li class="fas fa-business-time"> 商業管理</li>
+            <p></p>
+          </ul>
+      </div>
+      
+    </div>
+  </div>
+ </div>
+</div>
+
+<%- include('./partials/footer.ejs') -%>
